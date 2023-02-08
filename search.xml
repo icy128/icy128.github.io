@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>《三观/人情世故》</title>
+      <link href="/2023/02/08/%E9%9A%8F%E7%AC%941/"/>
+      <url>/2023/02/08/%E9%9A%8F%E7%AC%941/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>善因善果，善因恶果，恶因善果，恶因恶果<br>没有什么是非黑即白的，也没有任何人是可以下定义说是好人或坏人，只能说他做了什么好事或坏事<br>就像劫富济贫，这件事是正确的吗？并不是，是错误的，劫富济贫改变不了劫富的事实，但我们依然承认济贫的善果，这就是恶因善果<br>就像盗版书籍，贫穷的人需要知识来改变命运，但是正版的书籍是他们触不可及的，往往都是盗版书籍给予了他们想要的知识。他们看盗版，是恶因，但是盗版让看不起知识的人能看，这是善果<br>因果关系是很复杂的，不是非黑即白，善因善果，恶因恶果，也可能是恶因善果，多因一果，同因异果等等，好坏是相对的，我把偷来的食物拿去救快饿死的人，我既是好人也是坏人，在小猪的眼里，我们杀猪就像老虎杀人，我们也不会有负罪感<br>还有一些事，弊在当代，功在千秋，站的立场跟看的角度不同，是非便不同<br>事有相对善恶，人无绝对黑白，凡事轻易下定论无异于管中窥豹<br>我们不维护错误，而是错误的方式也可能结善果，也不代表因为善果就原谅恶因，如果这样的话只会制造出更多的恶</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 关于因果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript高级程序</title>
       <link href="/2023/02/06/%E6%96%87%E7%AB%A01/"/>
       <url>/2023/02/06/%E6%96%87%E7%AB%A01/</url>
       
-        <content type="html"><![CDATA[<h1 id="第一章-什么是-JavaScript"><a href="#第一章-什么是-JavaScript" class="headerlink" title="第一章 什么是 JavaScript"></a>第一章 什么是 JavaScript</h1><h3 id="1-1-历史"><a href="#1-1-历史" class="headerlink" title="1.1 历史"></a>1.1 历史</h3><blockquote><p>ECMAScript 是 JavaScript 的脚本语言标准<br>ECMA 是欧洲计算机制造协会</p></blockquote><h3 id="1-2JavaScript-实现"><a href="#1-2JavaScript-实现" class="headerlink" title="1.2JavaScript 实现"></a>1.2JavaScript 实现</h3><blockquote><p>ECMAScript 的版本有 1~10：ECMA-262 第一版至第十版，现在常说到的 es6、es7 就是这个<br>不同浏览器对 ECMAScript 的支持情况也不同<br><a href="https://s1.ax1x.com/2023/02/07/pSgr0JS.jpg">https://s1.ax1x.com/2023/02/07/pSgr0JS.jpg</a></p></blockquote><h4 id="1-2-1DOM"><a href="#1-2-1DOM" class="headerlink" title="1.2.1DOM"></a>1.2.1DOM</h4><blockquote><p>DOM 是一个 API，使得人们能够不刷新就改变页面内容，使用 DOM API 可以轻松地删除、添加、替换节点<br>网景和微软开发 DHTM(动态 HTML)的思路不同，所有 W3C(万维网联盟)为 DOM 制定了标准：DOM1~4<br>不同浏览器对 DOM 的支持情况也不同</p></blockquote><h4 id="1-2-2BOM"><a href="#1-2-2BOM" class="headerlink" title="1.2.2BOM"></a>1.2.2BOM</h4><blockquote><p>API，用于支持访问和操作浏览器的窗口，使用 BOM，开发者可以操控浏览器显示页面之外的部分</p></blockquote><h3 id="1-3JavaScript-版本"><a href="#1-3JavaScript-版本" class="headerlink" title="1.3JavaScript 版本"></a>1.3JavaScript 版本</h3><blockquote><p>Mozilla 和 IE 都有不同版本的 JavaScript，但多数时候我们所说的不同浏览器对 JavaScript 的支持，指的是浏览器实现 ECMAScript 和 DOM 的程度</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="第一章-什么是-JavaScript"><a href="#第一章-什么是-JavaScript" class="headerlink" title="第一章 什么是 JavaScript"></a>第一章 什么是 JavaScript</h1><h3 id="1-1-历史"><a href="#1-1-历史" class="headerlink" title="1.1 历史"></a>1.1 历史</h3><blockquote><p>ECMAScript 是 JavaScript 的脚本语言标准<br>ECMA 是欧洲计算机制造协会</p></blockquote><h3 id="1-2JavaScript-实现"><a href="#1-2JavaScript-实现" class="headerlink" title="1.2JavaScript 实现"></a>1.2JavaScript 实现</h3><blockquote><p>ECMAScript 的版本有 1~10：ECMA-262 第一版至第十版，现在常说到的 es6、es7 就是这个<br>不同浏览器对 ECMAScript 的支持情况也不同<br><a href="https://imgse.com/i/pSgr0JS"><img src="https://s1.ax1x.com/2023/02/07/pSgr0JS.md.jpg" alt="pSgr0JS.md.jpg"></a></p></blockquote><h4 id="1-2-1DOM"><a href="#1-2-1DOM" class="headerlink" title="1.2.1DOM"></a>1.2.1DOM</h4><blockquote><p>DOM 是一个 API，使得人们能够不刷新就改变页面内容，使用 DOM API 可以轻松地删除、添加、替换节点<br>网景和微软开发 DHTM(动态 HTML)的思路不同，所有 W3C(万维网联盟)为 DOM 制定了标准：DOM1~4<br>不同浏览器对 DOM 的支持情况也不同</p></blockquote><h4 id="1-2-2BOM"><a href="#1-2-2BOM" class="headerlink" title="1.2.2BOM"></a>1.2.2BOM</h4><blockquote><p>API，用于支持访问和操作浏览器的窗口，使用 BOM，开发者可以操控浏览器显示页面之外的部分</p></blockquote><h3 id="1-3JavaScript-版本"><a href="#1-3JavaScript-版本" class="headerlink" title="1.3JavaScript 版本"></a>1.3JavaScript 版本</h3><blockquote><p>Mozilla 和 IE 都有不同版本的 JavaScript，但多数时候我们所说的不同浏览器对 JavaScript 的支持，指的是浏览器实现 ECMAScript 和 DOM 的程度</p></blockquote>]]></content>
       
       
       <categories>
