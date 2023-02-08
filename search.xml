@@ -29,7 +29,32 @@
     
     
     <entry>
-      <title>JavaScript高级程序</title>
+      <title>JavaScript高级程序第二章</title>
+      <link href="/2023/02/07/%E6%96%87%E7%AB%A02/"/>
+      <url>/2023/02/07/%E6%96%87%E7%AB%A02/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h3 id="2-1-元素"><a href="#2-1-元素" class="headerlink" title="2.1 元素"></a>2.1 <script>元素</h3><blockquote><script>元素是什么？  &emsp; 将JavaScript插入HTML的主要方法就是用script标签，包含在script内的代码会被从上到下解释，要包含外部文件的JavaScript就必须使用src属性</blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span> = <span class="string">&#x27;example.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>&emsp; 另外，网页内嵌入和使用外部文件的方法，只选择其中一种即可，如果两者都有的话，浏览器只会下载并执行脚本文件，忽略行内代码</p></blockquote><h4 id="2-1-1-标签位置"><a href="#2-1-1-标签位置" class="headerlink" title="2.1.1 标签位置"></a>2.1.1 标签位置</h4><blockquote><p>&emsp; 过去的<code>&lt;script&gt;</code>标签都是放在<head>中，也就是在<body>前，把页面的展示内容放在<body>内，这就导致要先把 JavaScript 的代码都下载解析完成后才能渲染页面。注：<code>页面在浏览器解析到&lt;body&gt;的起始标签时才开始渲染</code>，这会导致打开时浏览器窗口空白<br>为了解决这个问题，现在都是将<code>&lt;script&gt;</code>标签同展示内容一起放在<body>中，放在内容之后</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 这里是页面的内容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span> = <span class="string">&#x27;example1.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span> = <span class="string">&#x27;example2.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="2-1-2-推迟执行脚本"><a href="#2-1-2-推迟执行脚本" class="headerlink" title="2.1.2 推迟执行脚本"></a>2.1.2 推迟执行脚本</h4><blockquote><p>&emsp;浏览器会按照<code>&lt;scirpt&gt;</code>在页面中出现的顺序依次执行，但 script 中的 defer 属性可以让浏览器延迟执行</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">deder</span> <span class="attr">src</span> = <span class="string">&#x27;example1.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">deder</span> <span class="attr">src</span> = <span class="string">&#x27;example2.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>&emsp; defer 属性只对外部脚本文件才有效，这是 HTML5 规定的，所以支持 HTML5 的浏览器都会忽略行内脚本的 defer 属性，也正是因为这个，defer 属性有兼容性的问题，我们最好还是手动更改顺序，把要推迟执行的脚本放在页面底部比较好</p></blockquote><h4 id="2-1-3-异步执行脚本"><a href="#2-1-3-异步执行脚本" class="headerlink" title="2.1.3 异步执行脚本"></a>2.1.3 异步执行脚本</h4><blockquote><p>&emsp;async:类似 defer，只是 defer 在延迟执行后的执行顺序是按照出现的次序依次执行，而 async 并不保证能按照出现的次序执行<br>给脚本添加 async 的目的是告诉浏览器，不用等脚本下载和解析完后再加载页面，也不用等这个 async 异步脚本执行完后再执行其它脚本</p></blockquote><h4 id="2-1-4-动态加载脚本"><a href="#2-1-4-动态加载脚本" class="headerlink" title="2.1.4 动态加载脚本"></a>2.1.4 动态加载脚本</h4><blockquote><p>&emsp;创建一个 script 元素并将其添加到 DOM</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let script = document.createElement(&#x27;script&#x27;);</span><br><span class="line">script.src = &#x27;gibbrish.js&#x27;;</span><br><span class="line">document.head.appendChild(script);</span><br></pre></td></tr></table></figure><h3 id="2-2-行内代码与外部文件"><a href="#2-2-行内代码与外部文件" class="headerlink" title="2.2 行内代码与外部文件"></a>2.2 行内代码与外部文件</h3><blockquote><p>&emsp;一般情况下认为外部引入更好<br>可维护性：JavaScript 代码如果分散到很多的 HTML 页面中，会导致维护困难<br>缓存：浏览器会根据特定的设置来缓存所有外部链接的 JavaScript 文件，如果两个页面都用到了同一文件，那么这个文件就只需要下载依次了，这会让页面加载更快<br>适应未来</p></blockquote><h3 id="2-3-文档模式"><a href="#2-3-文档模式" class="headerlink" title="2.3 文档模式"></a>2.3 文档模式</h3><blockquote><p>&emsp; 混杂模式、标准模式、准标准模式<br>准标准模式与标准模式非常接近，很少需要区分，所有我们通常所说的标准模式，指的就是除了混杂模式外的模式</p></blockquote><h3 id="2-4-元素"><a href="#2-4-元素" class="headerlink" title="2.4 元素"></a>2.4 <noscript>元素</h3><blockquote><p>&emsp;主要用来给不支持 JavaScript 的浏览器提供代替内容。<br>虽然现在的浏览器已经 100%支持 JavaScript，但是对于禁用 JavaScript 的浏览器来说，这个元素还是有用的，如果浏览器支持脚本，那么用户就永远不会看到其中的内容</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">noscript</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>这是禁用JavaScript的浏览器<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 书籍阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript高级程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript高级程序第一章</title>
       <link href="/2023/02/06/%E6%96%87%E7%AB%A01/"/>
       <url>/2023/02/06/%E6%96%87%E7%AB%A01/</url>
       
@@ -45,7 +70,7 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
+            <tag> JavaScript高级程序 </tag>
             
         </tags>
       
